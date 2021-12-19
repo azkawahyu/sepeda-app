@@ -1,0 +1,68 @@
+## Affandi Agung (96)
+1. (6/10) Pekerjaan backend developer yang utama adalah membuat sistem pengolahan data (Rest API / GraphQL / RPC) 
+2. (10/10)
+3. (15/15)
+4. (15/15)
+5. (15/15)
+6. (15/15)
+7. (20/20)
+
+## Akbar Maulana (0)
+- Tugas belum dipush
+
+## Azka Wahyu (93)
+1. (6/10) Pekerjaan backend developer yang utama adalah membuat sistem pengolahan data (Rest API / GraphQL / RPC)
+2. (8/10) Penjelasan utk masing-masing status code tidak ada
+3. (15/15)
+4. (15/15)
+5. (15/15)
+6. (15/15)
+7. (20/20)
+
+## Bayu Aji (88)
+1. (5/10) Pekerjaan backend developer yang utama adalah membuat sistem pengolahan data (Rest API / GraphQL / RPC), dan tidak ada hubungannya dengan tampilan / client
+2. (8/10) Penjelasan utk masing-masing status code tidak ada
+3. (15/15)
+4. (15/15)
+5. (15/15)
+6. (15/15)
+7. (15/20) Clone tidak dilakukan dua kali, dan jika sudah melakukan clone tidak perlu git init lagi, git init hanya jika kita membuat repository di lokal
+
+## Hammid Muamar (72)
+1. (10/10)
+2. (2/10) Penjelasan terlalu singkat dan tidak ada penjelasan sama sekali untuk masing-masing status code
+3. (13/15) Const juga merupakan block scope (tidak dijelaskan)
+4. (15/15)
+5. (10/15) Penjelasan terlalu singkat
+6. (10/15) Terlalu sedikit
+7. (12/20) Terlalu banyak step yang hilang.
+Saran : Dalam mengerjakan sesuatu, khusunya weekly assessment jangan setengah-setengah
+
+## Iyussoma (78)
+1. (7/10) Sama persis dengan PPT
+2. (8/10) Tidak ada penjelasan masing-masing status code sama sekali
+3. (13/15) Perbedaan kurang detail ( const merupakan block scope juga, let dan var nilainya dapat diubah )
+4. (10/15) Tidak dijelaskan masing-masing tipe data
+5. (15/15)
+6. (15/15)
+7. (10/20) Tidak seharusnya seluruh proses distack dalam satu kotak
+Saran : Dilarang copas, dan jika diminta (Jelaskan) maka jelaskan secara detail
+
+## Juan (95)
+1. (7/10) Sama persis dengan PPT
+2. (8/10) Tidak ada penjelasan untuk masing-masing status code
+3. (15/15)
+4. (15/15)
+5. (15/15)
+6. (15/15)
+7. (20/20)
+
+## Rikhi (95)
+1. (7/10) Persis dengan PPT
+2. (8/10) Kurang penjelasan untuk masing-masing status code
+3. (15/15)
+4. (15/15)
+5. (15/15)
+6. (15/15)
+7. (20/20)
+
