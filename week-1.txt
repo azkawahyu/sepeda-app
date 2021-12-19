@@ -57,6 +57,16 @@ Saran : Dilarang copas, dan jika diminta (Jelaskan) maka jelaskan secara detail
 6. (15/15)
 7. (20/20)
 
+## Martin
+1. (3/10) Terlalu singkat
+2. (3/10) Terlalu singkat
+3. (13/15) Tidak ada penjelasan mengenai dapat di-reassign atau tidak
+4. (15/15)
+5. (8/15) Array dapat berisi tipe data non-primitif dan penjelasan mengenai index tidak ada
+6. (15/15)
+7. (19/20) Tidak ada step git remote add origin nya
+Saran : Untuk mengerjakan tugas diharap utk memberikan effort yang lebih
+
 ## Rikhi (95)
 1. (7/10) Persis dengan PPT
 2. (8/10) Kurang penjelasan untuk masing-masing status code
