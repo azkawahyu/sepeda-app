@@ -58,6 +58,7 @@ app.put('/users/update/:id', (req, res) => {
     }
 })
 
+//DELETE - Delete Specific Users
 app.delete('/users/delete/:id', (req, res) => {
     const userId = req.params.id
     const usersData = getExistData()
