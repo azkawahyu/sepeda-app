@@ -8,25 +8,80 @@
   contoh : Anda akan membeli mouse Logitech G15, sejumlah 2, dengan harga total 600.000.
 */
 
+// -----------------------------Parent Class
 class Product {
   constructor(name, price, stock) {
-    (this.name = name), (this.pricce = price), (this.stock = stock);
+    this.name = name;
+    this.price = price,
+    this.stock = stock;
+   
   }
-  getSummary() {}
-  isAvailable(sum) {}
-}
 
-class Clothes extends Product {
-  constructor(color) {
-    super(), this.color;
+  getSummary() {
+ 
+    console.log(
+       this.name + 
+        " warna " +
+        this.warna +
+        " dengan harga Rp " +
+        (this.price).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') +
+        "/kg memiliki stok sejumlah " +
+        this.stock
+    );
+    
   }
-  Checkout(sum) {}
+
+  isAvailable(sum) {
+    return sum > this.stock ? false : true;
+  }
+
+  getTotalPrice() {
+    return this.price * this.stock
+  }
 }
 
-class Gadget extends Product {
-  constructor() {}
-  Checkout(sum) {}
+// -----------------------------Child Class
+class buah extends Product {
+  constructor(name, price=15000, stock, warna) {
+    super(name, price, stock);
+    this.warna = warna;
+  }
+
+  Checkout(sum) {
+         if (this.isAvailable(sum) == true)  
+      { console.log("Anda membeli "+ sum  +"kg "+ this.name + " warna " + this.warna +" seharga Rp "+ this.getTotalPrice().toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'))
+         this.stock = this.stock-sum} 
+      else
+       console.log("Pembelian "+ sum+" kg ditolak, karena stock yang tersedia saat ini adalah " + this.stock+" kg") 
+    }
 }
 
-const baju = new Clothes(1);
-console.log(baju);
+class Anggur extends Product {
+  constructor(name, price, stock, warna, jenis) {
+    super(name, price, stock);
+    this.warna = warna;
+    this.jenis = jenis;
+  }
+
+  Checkout(sum) {
+    if (this.isAvailable(sum) == true)  
+    { console.log("Anda membeli "+ sum  +"kg "+ this.name + " warna " + this.warna +" seharga Rp "+ this.getTotalPrice().toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'))
+       this.stock = this.stock-sum} 
+    else
+     console.log("Pembelian "+ sum+" kg ditolak, karena stock yang tersedia saat ini adalah " + this.stock+" kg") 
+  }
+  
+}
+
+let apel = new buah("Apel Fuji", 15000, 20, "Hijau");
+apel.getSummary();
+apel.Checkout(3);
+apel.Checkout(282);
+console.log("\n----------------------------------------------------------------------\n")
+
+
+let anggur = new Anggur("Anggur", 18900, 40, "Hitam");
+anggur.getSummary();
+anggur.Checkout(20);
+anggur.Checkout(30);
+
