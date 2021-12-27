@@ -45,7 +45,7 @@ app.get(`/:file`, (req, res) => {
 
 app.put("/:file", (req, res) => {
   const body = req.body;
-  fs.readFile(`./data/${req.params.file}.json`, (err, data) => {
+  fs.readFile(`./data/${req.params.file}.json`, `utf-8`, (err, data) => {
     if (err) {
       return res.status(404).json({
         status: `failed`,
