@@ -1,0 +1,15 @@
+{
+  "name": "express-hello-world",
+  "version": "1.0.0",
+  "description": "Membuat aplikasi backend dasar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seiga",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "moment": "^2.29.1"
+  }
+}
