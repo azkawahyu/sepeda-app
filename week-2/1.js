@@ -4,7 +4,7 @@ const duplicateCount = (input) => {
     result = 0;    
     for( i = 0; i < input.length; i++){   
       if(!data[input[i]]){ 
-          data[input[i]] = 1; // 'a': 1
+          data[input[i]] = 1; 
       } 
       else if(data[input[i]] >= 1) {
           data[input[i]]+=1;
@@ -14,5 +14,6 @@ const duplicateCount = (input) => {
     return result;
 }
 
+console.log(duplicateCount('abcde'))
 console.log(duplicateCount('AAbbCcd'))
 console.log(duplicateCount('AAbbCcddEEee')) // :(
