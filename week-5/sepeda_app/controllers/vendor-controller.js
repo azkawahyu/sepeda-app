@@ -41,7 +41,6 @@ module.exports = {
     try {
       const vendors = await Vendor.findAll({
         limit: 10,
-        order: [["createdAt", "desc"]],
         include: [
           {
             model: Sepeda,
@@ -52,7 +51,7 @@ module.exports = {
           },
         ],
         attributes: {
-          exclude: ["updatedAt"],
+          exclude: ["createdAt", "updatedAt"],
         },
       });
       if (!vendors) {
