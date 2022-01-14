@@ -23,7 +23,7 @@ const vendorController = {
 
       const vendor = await Vendor.create(body);
 
-      if (!Vendor) {
+      if (!vendor) {
         return res.status(500).json({
           status: "Internal Server Error",
           message: "Error to create the data",
@@ -49,10 +49,7 @@ const vendorController = {
           {
             model: Sepeda,
             as: "sepedas",
-            attributes: {
-              exclude: ["name", "price", "stock"],
             },
-          },
         ],
         attributes: {
           exclude: ["updatedAt", "createdAt"],
@@ -80,15 +77,11 @@ const vendorController = {
     try {
       const vendor = await Vendor.findOne({
         where: { id },
-        order: [["id", "DESC"]],
         include: [
           {
             model: Sepeda,
             as: "sepedas",
-            attributes: {
-              exclude: ["name", "price", "stock"],
             },
-          },
         ],
         attributes: {
           exclude: ["updatedAt", "createdAt"],

@@ -154,7 +154,6 @@ module.exports = {
   },
   deleteSepeda: async (req,res) => {
     const { sepedaId } = req.params
-    console.log(sepedaId)
     try {
       const sepeda = await Sepeda.destroy({
         where : { id:sepedaId }

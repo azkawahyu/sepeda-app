@@ -33,7 +33,6 @@ const adminController = {
     try {
       const admin = await Admins.findOne({
         where: { id },
-        order: [["id", "DESC"]],
         attributes: {
           exclude: ["updatedAt", "createdAt"],
         },
