@@ -42,7 +42,7 @@ module.exports = {
     return (req, res, next) => {
       upload(req, res, (err) => {
         if (err) {
-          catchHandler(res, err);
+          catchError(res, err);
         }
         next();
       });
