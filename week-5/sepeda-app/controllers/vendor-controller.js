@@ -49,6 +49,8 @@ const vendorController = {
           {
             model: Sepeda,
             as: "sepedas",
+            attributes: {exclude: 
+              ["updatedAt", "createdAt"]}
             },
         ],
         attributes: {
@@ -81,6 +83,8 @@ const vendorController = {
           {
             model: Sepeda,
             as: "sepedas",
+            attributes: {exclude: 
+              ["updatedAt", "createdAt"]}
             },
         ],
         attributes: {
